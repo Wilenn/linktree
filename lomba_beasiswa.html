@@ -166,7 +166,32 @@
             transform: translateY(-2px);
             color: var(--accent-color) !important;
         }
-
+        .logo-text {
+        line-height: 1.2;
+        margin-left: 10px;
+    }
+    
+    .navbar-brand h4 {
+        color: var(--primary-color);
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-brand:hover h4 {
+        color: var(--accent-color);
+    }
+    
+    @media (max-width: 768px) {
+        .logo-text {
+            margin-left: 8px;
+        }
+        .navbar-brand h4 {
+            font-size: 1.1rem;
+        }
+        .navbar-brand p {
+            font-size: 0.7rem;
+        }
+    }
         /* Header Styles */
         header {
             position: fixed;
@@ -453,11 +478,14 @@
         <i class="bi bi-chevron-up"></i>
     </div>
     <nav class="navbar navbar-expand-lg">
-        <div class="main-content"></div>
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="images/main-logo.png" alt="Logo" class="nav-logo">
+            <!-- Logo dan Text -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/lomba-logo.png" alt="Logo" class="nav-logo me-3">
+                <div class="logo-text">
+                    <h4 class="mb-0">Lomba & Beasiswa</h4>
+                    <p class="mb-0 text-muted d-none d-sm-block" style="font-size: 0.8rem;">AAS HIMSIKA</p>
+                </div>
             </a>
 
             <!-- Toggler Mobile -->
@@ -474,15 +502,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="lomba.html">Lomba</a></li>
-                            <li><a class="dropdown-item" href="beasiswa.html">Beasiswa</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -530,7 +549,7 @@
             <h1 class="text-center my-4" style="color: white;">Lomba</h1>
             <div class="grid-container">
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modalLomba1">
-                    <img src="images/lomba.png" alt="Pamflet Lomba">
+                    <img src="#" alt="Pamflet Lomba">
                     <div class="card-body">
                         <h5 class="card-title">Lomba Pemrograman Nasional</h5>
                         <p class="card-text">Kompetisi tingkat nasional yang menantang kemampuan coding mahasiswa.</p>
@@ -542,7 +561,7 @@
                     </div>
                 </div>
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modalLomba1">
-                    <img src="images/lomba.png" alt="Pamflet Lomba">
+                    <img src="#" alt="Pamflet Lomba">
                     <div class="card-body">
                         <h5 class="card-title">Lomba Pemrograman Nasional</h5>
                         <p class="card-text">Kompetisi tingkat nasional yang menantang kemampuan coding mahasiswa.</p>
@@ -554,7 +573,7 @@
                     </div>
                 </div>
                 <div class="card" data-bs-toggle="modal" data-bs-target="#modalLomba1">
-                    <img src="images/lomba.png" alt="Pamflet Lomba">
+                    <img src="#" alt="Pamflet Lomba">
                     <div class="card-body">
                         <h5 class="card-title">Lomba Pemrograman Nasional</h5>
                         <p class="card-text">Kompetisi tingkat nasional yang menantang kemampuan coding mahasiswa.</p>
@@ -620,7 +639,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
-                        <img src="images/lomba.png" class="img-fluid" alt="Pamflet Lomba">
+                        <img src="#" class="img-fluid" alt="Pamflet Lomba">
                         <p class="mt-3">Kompetisi tingkat nasional yang menantang kemampuan coding mahasiswa. Ikuti dan
                             menangkan hadiah menarik!</p>
                     </div>
